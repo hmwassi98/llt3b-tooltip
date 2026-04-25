@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative CSS Tooltips</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="card">
+  <div class="card__glow"></div>
+
+  <div class="topbar">
+    <span class="logo">Nebula UI</span>
+
+    <button class="icon-btn tooltip tooltip-bottom" data-tooltip="Open settings panel" aria-label="Settings">
+      ⚙
+    </button>
+  </div>
+
+  <section class="hero">
+    <div class="avatar tooltip tooltip-top" data-tooltip="Nova the cosmic explorer"></div>
+
+    <div class="hero__text">
+      <h1>Nova Profile</h1>
+      <p>
+        A futuristic control card demonstrating stylish and useful CSS tooltips.
+        Hover over different elements to explore interactive hints.
+      </p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat tooltip tooltip-top" data-tooltip="Current energy reserve level">
+      <span class="stat__label">Energy</span>
+      <span class="stat__value">92%</span>
+    </div>
+
+    <div class="stat tooltip tooltip-top" data-tooltip="Completed exploration missions">
+      <span class="stat__label">Missions</span>
+      <span class="stat__value">128</span>
+    </div>
+
+    <div class="stat tooltip tooltip-top" data-tooltip="Signals detected from nearby systems">
+      <span class="stat__label">Signals</span>
+      <span class="stat__value">17</span>
+    </div>
+  </section>
+
+  <section class="controls">
+    <button class="action-btn tooltip tooltip-top" data-tooltip="Launch the navigation sequence">
+      Launch
+    </button>
+
+    <button class="action-btn tooltip tooltip-top" data-tooltip="Scan the surrounding sector">
+      Scan
+    </button>
+
+    <button class="action-btn tooltip tooltip-top" data-tooltip="Send a signal to mission control">
+      Transmit
+    </button>
+  </section>
+
+  <section class="form-area">
+    <label for="codename">Pilot Codename</label>
+    <div class="input-wrap">
+      <input
+              id="codename"
+              type="text"
+              placeholder="Enter your codename"
+              class="tooltip tooltip-right"
+              data-tooltip="Use 4–12 characters for your mission alias"
+      />
+      <span class="help-badge tooltip tooltip-left" data-tooltip="This name appears on your command badge">?</span>
+    </div>
+  </section>
+
+  <section class="footer-note">
+      <span class="note tooltip tooltip-top" data-tooltip="Tooltips can guide users without cluttering the layout">
+        Why tooltips matter
+      </span>
+  </section>
+</main>
+</body>
+</html>
